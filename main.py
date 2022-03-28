@@ -37,10 +37,10 @@ def convert(message: telebot.types.Message):
         values = message.text.split(' ')
 
         if len(values) > 3:
-            raise ConvertionException('Параметров для выполнения операций перевода более 3. \
+            raise ConvertionException('Параметров для выполнения операций конвертации более 3. \
             Воспользуйтесь инструкцией для понимания формата вводимых комманд')
         elif len(values) < 3:
-            raise ConvertionException('Параметров для выполнения операций перевода менее 3. \
+            raise ConvertionException('Параметров для выполнения операций конвертации менее 3. \
             Воспользуйтесь инструкцией для понимания формата вводимых комманд')
 
         quote, base, amount = values
