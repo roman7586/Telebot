@@ -34,7 +34,7 @@ def convert(message: telebot.types.Message):
 
     try:
 
-        values = message.text.split(' ')
+        values = message.text.split()
 
         if len(values) > 3:
             raise ConvertionException('Параметров для выполнения операций конвертации более 3. \
