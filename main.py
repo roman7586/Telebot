@@ -5,12 +5,6 @@ from extensions import ConvertionException, CryptoConverter
 
 bot = telebot.TeleBot(TOKEN)
 
-#@bot.message_handler(commands=['start', 'help'])
-#def help(message: telebot.types.Message):
-#    text = 'Чтобы начать работу введите команду боту в следующем форматеЖ \n <имя валюты> \
-#<в какую валюту перевести> \
-#<количество переводимой валюты>'
-#    bot.reply_to(message, text)
 @bot.message_handler(commands=['start', 'help'])
 def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
