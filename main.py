@@ -1,4 +1,4 @@
-import telebot1
+import telebot2
 from telebot import types
 from config import keys, TOKEN
 from extensions import ConvertionException, CryptoConverter
